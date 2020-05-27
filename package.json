@@ -1,0 +1,23 @@
+{
+  "name": "charlesmbrady.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesmbrady/charlesmbrady.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesmbrady/charlesmbrady.github.io/issues"
+  },
+  "homepage": "https://charlemsbrady.github.io",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
