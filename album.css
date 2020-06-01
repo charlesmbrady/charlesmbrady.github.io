@@ -29,5 +29,19 @@ footer {
 }
 
 footer p {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-logo {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.my-thumbnail {
+  width: 100%;
+  height: auto;
+}
+.app-title {
+  text-align: center;
+  text-decoration: underline;
 }
