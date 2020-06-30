@@ -18,7 +18,11 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/4.5/examples/album/"
     />
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap core CSS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -141,6 +145,53 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
+                <img src="./images//csvgenerator.png" class="my-logo" alt="" />
+                <div class="card-body">
+                  <h6 class="app-title">CSV Data Generator</h6>
+                  <p class="card-text">
+                    This is a .csv file generator. It can be used to configure
+                    and generate a .csv consisting of mock data that can be used
+                    to populate something like a Salesforce database, or used in
+                    other testing.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a href="#" target="_blank"
+                        ><button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          disabled
+                        >
+                          Watch Demo
+                        </button></a
+                      >
+                      <a
+                        href="https://github.com/charlesmbrady/file-generation-svc"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          View Repo
+                        </button>
+                      </a>
+                    </div>
+                    <small class="text-muted"
+                      ><a
+                        href="http://file-generation-svc.herokuapp.com"
+                        target="_blank"
+                        >Go to App</a
+                      ></small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
                 <img
                   src="./images//MernolithicREADY.svg"
                   class="my-logo"
@@ -169,6 +220,7 @@
                         ><button
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
+                          disabled
                         >
                           Watch Demo
                         </button></a
@@ -215,12 +267,13 @@
                         ><button
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
+                          disabled
                         >
                           Watch Demo
                         </button></a
                       >
                       <a
-                        href="https://github.com/charlesmbrady/MERNolithic_sql"
+                        href="https://github.com/charlesmbrady/stabilyzr"
                         target="_blank"
                       >
                         <button
@@ -232,9 +285,7 @@
                       </a>
                     </div>
                     <small class="text-muted"
-                      ><a
-                        href="https://charlesmbrady.github.io/mernolithic-home/"
-                        target="_blank"
+                      ><a href="http://stabilyzr.herokuapp.com" target="_blank"
                         >Go to App</a
                       ></small
                     >
@@ -426,6 +477,26 @@
         document.write(
           '<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>'
         );
+    </script>
+    <script>
+      $.ajax('http://file-generation-svc.herokuapp.com').then((res) => {
+        console.log('csv generator is up');
+      });
+      $.ajax('http://mernolithic.herokuapp.com').then((res) => {
+        console.log('mernolithic demo is up');
+      });
+      $.ajax('http://stabilyzr.herokuapp.com').then((res) => {
+        console.log('Stabilyzr is up');
+      });
+      $.ajax('https://google-books-search-45506.herokuapp.com/').then((res) => {
+        console.log('Google Books Search is up');
+      });
+      $.ajax('https://scrape-n-surf-58013.herokuapp.com/').then((res) => {
+        console.log('Scrape N Surf is up');
+      });
+      $.ajax('http://dupegen.herokuapp.com/').then((res) => {
+        console.log('Dupegen is up');
+      });
     </script>
     <script src="../assets/dist/js/bootstrap.bundle.js"></script>
   </body>
